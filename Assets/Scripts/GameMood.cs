@@ -44,6 +44,9 @@ public class GameMood : MonoBehaviour {
     [Header("Initialization")]
     public Transform player;
 
+    //for text dialogue to aim at essentially
+    public Transform downwardCameraLookTarget;
+
 
     [Header("Time")]
     public float LongWaitTime = 10f;

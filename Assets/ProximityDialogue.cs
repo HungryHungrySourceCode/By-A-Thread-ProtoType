@@ -57,7 +57,7 @@ public class OneTimeProximityDialogue : MonoBehaviour {
     IEnumerator FadeIn()
     {
         float t = 0f;
-        transform.LookAt(Camera.main.transform.position);
+        transform.LookAt(GameMood.instance.downwardCameraLookTarget);
         while (t < 1f)
         {
             t += Time.deltaTime * fadeInRate;
