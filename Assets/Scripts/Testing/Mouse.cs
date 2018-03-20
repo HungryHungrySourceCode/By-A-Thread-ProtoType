@@ -71,10 +71,10 @@ public class Mouse : MonoBehaviour
         {
             Vector3 dir = (transform.position - threat.position);
             Vector3 newDir = new Vector3(transform.position.x - threat.position.x, transform.position.y, transform.position.z - threat.position.z);
-            navAgent.SetDestination(newDir * 20f);
+            navAgent.SetDestination(newDir * 0.7f);
             navAgent.speed = runSpeed;
 
-            if (dir.magnitude >= detectDistance * 3f)
+            if (dir.magnitude >= detectDistance * 2f)
             {
                 navAgent.speed = moveSpeed;
                 StartCoroutine(Wander());
